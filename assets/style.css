@@ -14,4 +14,6 @@ header {
   font-size: 2em;
   color: #2D2C54;
   background-color: #ECECEC;
+  padding: 1vh;
+  border-radius: 0 50px 50px 0;
 }
