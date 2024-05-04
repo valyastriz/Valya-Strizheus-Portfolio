@@ -8,7 +8,7 @@
     <h1>Contact Me</h1>
 
     <form>
-      <label for="ftname">First Name:</label>
+      <label for="fname">First Name:</label>
       <input type="text" id="fname" name="fname" placeholder="Enter First Name" required>
 
       <br><br>
@@ -46,11 +46,21 @@
       <label for="answer">What's your guess?</label>
       <input type="text" id="answer" name="answer" placeholder="Enter your guess">
 
-      <br><br>
+      <br>
 
       <p>Which of the following are true? Select all that apply.</p>
-      <br>
-      <input type="checkbox" id="">
+      <input type="checkbox" id="phonetype1" name="phonetype" value="iPhone">
+      <label for="phonetype1">I use an iPhone</label><br>
+      <input type="checkbox" id="phonetype2" name="phonetype" value="Android">
+      <label for="phonetype2">I use an Android phone</label><br>
+      <input type="checkbox" id="computer1" name="computer" value="Mac">
+      <label for="computer1">I use a Mac Computer</label><br>
+      <input type="checkbox" id="computer2" name="computer" value="Windows">
+      <label for="computer2">I use a Windows Computer</label><br>
+      <input type="checkbox" id="computer3" name="computer" value="Linux">
+      <label for="computer3">I use a Linux OS computer</label>
+      
+      <br><br>
 
       <label for="inquiry"></label>
       <textarea name="inquiry" id="inquiry" cols="30" rows="7" placeholder="Enter your inquiry here" required></textarea>
