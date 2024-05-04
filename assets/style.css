@@ -1,35 +1,42 @@
 body {
-  font-family: Verdana, Arial, sans-serif
+  font-family: Verdana, Arial, sans-serif;
+  border: 3px solid black;
+  margin: 1px;
+  background-color: #ABAAB8;
 }
 
 header {
   background-color: #2D2C54;
   border: 3px solid red;
+  margin: 1px;
 }
 
 .headerimage {
   width: 100%;
   border: 3px solid blue;
+  margin: 1px;
 }
 
-.logo {
+#logo {
   font-size: 2em;
   color: #2D2C54;
-  background-color: #ECECEC;
   padding: 1vh;
   border-radius: 0 50px 50px 0;
-  border: 3px solid green;
+  background-color: #FCFBFB;
+  border: 3px solid orange;
+  margin: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .noullinknosh {
   text-decoration: none;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
 }
 
 .navbar {
   color: #FCFBFB;
   border: 3px solid yellow;
+  margin: 1px;
 }
 
 h2 {
@@ -38,4 +45,58 @@ h2 {
 
 h3 {
   font-size: 1.2em;
+}
+
+.aboutsection {
+  border: 3px solid greenyellow;
+  margin: 1px;
+}
+
+.aboutmelink {
+  border: 3px solid red;
+  margin: 1px;
+}
+
+.aboutmep {
+  border: 3px solid yellow;
+  margin: 1px;
+}
+
+.worksection {
+  border: 3px solid fuchsia;
+  margin: 1px;
+}
+
+.projects {
+  border: 3px solid yellowgreen;
+  margin: 1px;
+}
+
+.workseclink {
+  border: 3px solid blue;
+  margin: 1px;
+}
+footer {
+  border: 3px solid greenyellow;
+  margin: 1px;
+}
+
+.contactinfoot {
+  border: 3px solid blue;
+  margin: 1px;
+}
+
+.footphone {
+  border: 3px solid blue;
+  margin: 1px;
+}
+
+.footemail {
+  border: 3px solid blue;
+  margin: 1px;
+}
+
+.footgithub {
+  border: 3px solid blue;
+  margin: 1px;
 }
