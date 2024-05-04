@@ -13,7 +13,7 @@ body {
     margin: 1px;
   }
   
-  #logo {
+  .logo {
     border: 3px solid orange;
     margin: 1px;
   }
@@ -43,6 +43,16 @@ body {
     margin: 1px;
   }
   
+  .slogan {
+    border: 3px solid white;
+    margin: 1px;
+  }
+
+  .headerimglogan {
+    border: 3px solid coral;
+    margin: 1px;
+  }
+
   .aboutsection {
     border: 3px solid greenyellow;
     margin: 1px;
@@ -63,6 +73,21 @@ body {
     margin: 1px;
   }
   
+  .text-box {
+    border: 3px solid rgb(54, 150, 195);
+    margin: 1px;
+  }
+
+  .projname {
+    border: 3px solid rgb(157, 25, 36);
+    margin: 1px;
+  }
+
+  .projdate {
+    border: 3px solid rgb(157, 25, 36);
+    margin: 1px;
+  }
+
   .projects {
     border: 3px solid yellowgreen;
     margin: 1px;

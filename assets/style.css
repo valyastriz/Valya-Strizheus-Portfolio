@@ -11,7 +11,17 @@ header {
   width: 100%;
 }
 
-#logo {
+.slogan {
+  color: #ABAAB8;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* .headerimglogan {
+
+} */
+
+.logo {
   font-size: 2em;
   color: #2D2C54;
   padding: 1vh;
@@ -74,6 +84,7 @@ p {
 
 }
 
+
 .projects {
 
 }
@@ -100,4 +111,20 @@ footer {
 
 .footgithub {
 
-} */
+} 
+
+.projname {
+}
+*/
+
+.worksection .text-box {
+  background-color: #FCFBFB;
+  color:#2D2C54;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 0 50px 50px 0;
+  font-size: .95em;
+}
+
+.worksection .text-box .projdate {
+  font-size: .75em;
+}
