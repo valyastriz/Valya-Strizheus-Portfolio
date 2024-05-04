@@ -21,6 +21,12 @@ header {
   border: 3px solid green;
 }
 
+.noullinknosh {
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
 .navbar {
   color: #FCFBFB;
   border: 3px solid yellow;
