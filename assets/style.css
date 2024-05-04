@@ -9,32 +9,38 @@
 body {
   /* Color for the whole page*/
   background-color: #ABAAB8;
-}
-.header div{
-  /* Styling for the header*/
-  display: inline-flex;
-  flex-flow: row nowrap;
-  background-color: #474787;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header {
+  /*background color for the whole header*/
   background-color: #474787;
 }
 #logo {
   display: inline-flex;
   align-self: flex-start;
-  padding: 1em;
+  padding: .5em;
   background-color: #ABAAB8;
   border-radius: 0 50px 50px 0;
+  font-size: 1.5em;
+  color: #2D2C54;
 }
 
-.navigation {
-  display: inline-flex;
-  align-self: flex-end;
-}
-
-.navigation ul {
+.navbar {
   display: flex;
-  padding: 1em;
-  
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar ul li {
+  margin: 0 10px 10px;
+}
+
+.background-image {
+  width: 100%;
 }
