@@ -1,0 +1,29 @@
+* {
+  /* Set no padding and no margin for all elements.
+  Set border-box size for all elements. */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* Color for the whole page*/
+  background-color: #ABAAB8;
+}
+.header div{
+  /* Styling for the header*/
+  display: inline-flex;
+  flex-flow: row nowrap;
+  background-color: #474787;
+  width: 100%;
+}
+
+.logo {
+  display: inline-flex;
+  align-self: flex-start;
+}
+
+.navigation {
+  display: inline-flex;
+  align-self: flex-end;
+}
