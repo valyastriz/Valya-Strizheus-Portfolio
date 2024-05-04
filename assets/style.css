@@ -15,15 +15,26 @@ body {
   display: inline-flex;
   flex-flow: row nowrap;
   background-color: #474787;
-  width: 100%;
 }
 
-.logo {
+.header {
+  background-color: #474787;
+}
+#logo {
   display: inline-flex;
   align-self: flex-start;
+  padding: 1em;
+  background-color: #ABAAB8;
+  border-radius: 0 50px 50px 0;
 }
 
 .navigation {
   display: inline-flex;
   align-self: flex-end;
+}
+
+.navigation ul {
+  display: flex;
+  padding: 1em;
+  
 }
