@@ -29,6 +29,7 @@ header {
   background-color: #FCFBFB;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   display: inline-block;
+  box-shadow: 0 0 10px rgb(255, 254, 254);
 }
 
 .noullinknosh {
@@ -131,6 +132,7 @@ footer {
   position: absolute;
   bottom: 5%;
   left: 0;
+  box-shadow: 0 0 10px rgb(255, 254, 254);
 }
 
 .worksection .text-box .projdate {
