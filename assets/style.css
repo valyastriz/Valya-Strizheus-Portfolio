@@ -3,23 +3,27 @@ body {
   background-color: #ABAAB8;
   margin: 0;
   padding: 0;
-  height: 100%;
+  position: relative;
 }
 
-.header {
+header {
   background-color: #2D2C54;
   position: relative;
-  display: flex;
 }
 
-.headerimglogan img {
-  width: 100%;
-  flex: 1 1 auto;
+.headerimage {
+  display: flex;
 }
 
 .headerimglogan {
   display: flex;
   position: relative;
+}
+
+.headerimglogan img {
+  display: block;
+  width: 100%;
+  flex: 1 1 auto;
 }
 
 .slogan {
@@ -104,10 +108,6 @@ p {
 
 }
 
-.workseclink {
-
-}
-
 footer {
 
 }
@@ -134,20 +134,25 @@ footer {
 .worksection {
   position: relative;
   display: flex;
-  align-items: stretch;
-}
-
-.work-container {
-  flex: 1;
-  padding-right: 2em;
 }
 
 /* .worksection h2 {
 
 } */
 
-.projcontainer {
+.workseclink {
+  flex: 0 0 25%;
+  text-align: end;
+  padding: 0 10px;
+  border-right: 3px solid #2D2C54;
+}
 
+.projcontainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 75%;
 }
 
 .worksection .text-box {
@@ -176,6 +181,16 @@ footer {
 }
 
 .worksecimg img {
-  position: relative;
-  flex: 1;
+  width: 100%;
+  flex: 1 1 auto;
 }
+
+.worksecimg:first-child {
+  /* Set width of first project*/
+  width: 100%;
+}
+
+.worksecimg:not(:first-child) {
+  flex-basis: 49%; /* set two images per row with a gap of 2em*/
+}
+
