@@ -3,23 +3,30 @@ body {
   background-color: #ABAAB8;
 }
 
-header {
+.header {
   background-color: #2D2C54;
+  position: relative;
+  display: flex;
 }
 
-.headerimage {
+.headerimglogan img {
   width: 100%;
+  flex: 1 1 auto;
+}
+
+.headerimglogan {
+  display: flex;
+  position: relative;
 }
 
 .slogan {
-  color: #ABAAB8;
+  color: #2D2C54;
   font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgb(249, 247, 247);
+  position: absolute;
+  right: .1em;
+  bottom: .5em;
 }
-
-/* .headerimglogan {
-
-} */
 
 .logo {
   font-size: 2em;
@@ -30,6 +37,7 @@ header {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   display: inline-block;
   box-shadow: 0 0 10px rgb(255, 254, 254);
+  border: 1px solid rgb(127, 128, 129);
 }
 
 .noullinknosh {
@@ -39,11 +47,14 @@ header {
 
 .navbar {
   display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 1.2em;
 }
 
-.navbar ul {
+/* .navbar ul {
 
-}
+} */
 
 .navbar ul li{
   display: inline-block;
@@ -133,6 +144,8 @@ footer {
   bottom: 5%;
   left: 0;
   box-shadow: 0 0 10px rgb(255, 254, 254);
+  border: 1px solid rgb(127, 128, 129);
+    margin: 1px;
 }
 
 .worksection .text-box .projdate {
@@ -141,4 +154,13 @@ footer {
 
 .worksecimg {
   position: relative;
+}
+
+.worksecimg:first-child img {
+  max-width: 95%
+}
+
+.worksecimg:not(first-child) img {
+  max-width: 45%;
+  flex-grow: 1;
 }
