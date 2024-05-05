@@ -73,6 +73,11 @@ body {
     margin: 1px;
   }
   
+  .projcontainer {
+    border: 3px solid rgb(54, 150, 195);
+    margin: 1px;
+  }
+
   .text-box {
     border: 3px solid rgb(54, 150, 195);
     margin: 1px;

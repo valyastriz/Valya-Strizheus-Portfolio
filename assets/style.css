@@ -1,6 +1,9 @@
 body {
   font-family: Verdana, Arial, sans-serif;
   background-color: #ABAAB8;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 .header {
@@ -81,23 +84,22 @@ p {
   line-height: 1.2em;
 }
 
-/* .aboutsection {
-
+.aboutsection {
+  display: flex;
 }
 
 .aboutmelink {
-
+  flex: 0 0 25%;
+  text-align: end;
+  padding: 0 10px;
+  border-right: 3px solid #2D2C54;
 }
 
-.aboutmep {
+/* .aboutmep {
 
-}
+} */
 
-.worksection {
-
-}
-
-
+/*
 .projects {
 
 }
@@ -127,11 +129,25 @@ footer {
 } 
 
 .projname {
-}
-*/
+} */
 
 .worksection {
   position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+.work-container {
+  flex: 1;
+  padding-right: 2em;
+}
+
+/* .worksection h2 {
+
+} */
+
+.projcontainer {
+
 }
 
 .worksection .text-box {
@@ -145,7 +161,7 @@ footer {
   left: 0;
   box-shadow: 0 0 10px rgb(255, 254, 254);
   border: 1px solid rgb(127, 128, 129);
-    margin: 1px;
+  margin: 1px;
 }
 
 .worksection .text-box .projdate {
@@ -154,13 +170,12 @@ footer {
 
 .worksecimg {
   position: relative;
+  display: flex;
+  flex-wrap: wrap; /* makes images wrap to next row when there's not enough space */
+  gap: 2em;
 }
 
-.worksecimg:first-child img {
-  max-width: 95%
-}
-
-.worksecimg:not(first-child) img {
-  max-width: 45%;
-  flex-grow: 1;
+.worksecimg img {
+  position: relative;
+  flex: 1;
 }
