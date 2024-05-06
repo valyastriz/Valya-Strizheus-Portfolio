@@ -4,15 +4,18 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  font-size: 15px;
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
   background-color: #2D2C54;
   position: relative;
 }
 
 .headerimage {
-  display: flex;
+  display: block;
 }
 
 .headerimglogan {
@@ -31,8 +34,9 @@ header {
   font-weight: bold;
   text-shadow: 2px 2px 4px rgb(249, 247, 247);
   position: absolute;
-  right: .1em;
-  bottom: .5em;
+  right: 0;
+  bottom: 5%;
+  flex-shrink: 0;
 }
 
 .logo {
@@ -53,10 +57,9 @@ header {
 }
 
 .navbar {
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  top: 1.2em;
+  flex: inline-block;
+  position: relative;
+  flex-direction: row;
 }
 
 /* .navbar ul {
@@ -65,6 +68,7 @@ header {
 
 .navbar ul li{
   display: inline-block;
+  position: relative;
 }
 
 .navbar ul a {
@@ -74,30 +78,22 @@ header {
   -webkit-text-stroke: 1px black; /* For Safari */
   text-stroke: 1px black; /* For Firefox */
   position: relative;
+  
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 p {
-  line-height: 1.2em;
+  line-height: 1.2rem;
 }
 
-.aboutsection {
-  display: flex;
-}
 
-.aboutmelink {
-  flex: 0 0 25%;
-  text-align: end;
-  padding: 0 10px;
-  border-right: 3px solid #2D2C54;
-}
 
 /* .aboutmep {
 
@@ -131,53 +127,39 @@ footer {
 .projname {
 } */
 
-.worksection {
-  position: relative;
-  display: flex;
-}
 
 /* .worksection h2 {
 
 } */
 
-.workseclink {
-  flex: 0 0 25%;
-  text-align: end;
-  padding: 0 10px;
-  border-right: 3px solid #2D2C54;
-}
-
-.projcontainer {
-  position: relative;
+.aboutsection {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 75%;
+  flex-direction: column;
 }
 
-.worksection .text-box {
+.text-box {
   background-color: #FCFBFB;
   color:#2D2C54;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 0 50px 50px 0;
-  font-size: .95em;
+  font-size: .95rem;
   position: absolute;
-  bottom: 5%;
-  left: 0;
+  bottom: 10px;
+  left: 0px;
   box-shadow: 0 0 10px rgb(255, 254, 254);
   border: 1px solid rgb(127, 128, 129);
   margin: 1px;
 }
 
 .worksection .text-box .projdate {
-  font-size: .75em;
+  font-size: .75rem;
+  position: relative;
 }
 
 .worksecimg {
   position: relative;
   display: flex;
   flex-wrap: wrap; /* makes images wrap to next row when there's not enough space */
-  gap: 2em;
 }
 
 .worksecimg img {
@@ -185,12 +167,85 @@ footer {
   flex: 1 1 auto;
 }
 
-.worksecimg:first-child {
-  /* Set width of first project*/
-  width: 100%;
+
+/* Small Screen media query */
+@media screen and (max-width: 480) {
+
 }
 
-.worksecimg:not(:first-child) {
-  flex-basis: 49%; /* set two images per row with a gap of 2em*/
+
+
+/* Large Screens Media Query */
+
+@media screen and (min-width: 768px) {
+  .aboutsection {
+    display: flex;
+  }
+  
+  .aboutmelink {
+    flex: 0 0 25%;
+    text-align: end;
+    padding: 0 10px;
+    border-right: 3px solid #2D2C54;
+  }
+
+  .worksecimg img {
+    /* Set width of first project*/
+    width: 100%;
+
+  .worksection {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+  }
+  
+    .workseclink {
+      flex: 0 0 25%;
+      text-align: center;
+      padding: 0 10px;
+      
+    }
+    
+    .projcontainer {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 75%;
+    }
+
+
+    
+  }
+  
+  .worksecimg:not(:first-child) {
+    flex-basis: 50%; /* set two images per row with a gap of 2rem*/
+  }  
+
+  .worksection {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .workseclink {
+    flex: 0 0 25%;
+    text-align: end;
+    padding: 0 10px;
+    
+  }
+  
+  .projcontainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 75%;
+  }
 }
+
+
+
+/* testing */
 
