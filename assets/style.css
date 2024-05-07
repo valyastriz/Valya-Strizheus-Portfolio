@@ -9,9 +9,18 @@ body {
 
 header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   background-color: #2D2C54;
   position: relative;
+}
+
+.navAndLogo {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
 }
 
 .headerimage {
@@ -34,7 +43,7 @@ header {
   font-weight: bold;
   text-shadow: 2px 2px 4px rgb(249, 247, 247);
   position: absolute;
-  right: 0;
+  right: 1em;
   bottom: 5%;
   flex-shrink: 0;
 }
@@ -60,6 +69,7 @@ header {
   flex: inline-block;
   position: relative;
   flex-direction: row;
+  right: 0.5em;
 }
 
 /* .navbar ul {
@@ -69,6 +79,7 @@ header {
 .navbar ul li{
   display: inline-block;
   position: relative;
+  padding: 0 0.1em;
 }
 
 .navbar ul a {
@@ -93,7 +104,15 @@ p {
   line-height: 1.2rem;
 }
 
+.aboutmelink {
+  padding: 0 0 0.75em;
+}
 
+.workseclink {
+  flex: 0 0 25%;
+  text-align: center;
+  padding: 0 0 0.75em;
+}
 
 /* .aboutmep {
 
@@ -134,7 +153,9 @@ footer {
 
 .aboutsection {
   display: flex;
+  padding: 1em 1em;
   flex-direction: column;
+  text-align: center;
 }
 
 .text-box {
@@ -149,6 +170,10 @@ footer {
   box-shadow: 0 0 10px rgb(255, 254, 254);
   border: 1px solid rgb(127, 128, 129);
   margin: 1px;
+}
+
+.worksection {
+  padding: 1em 1em 1em;
 }
 
 .worksection .text-box .projdate {
@@ -180,8 +205,10 @@ footer {
 @media screen and (min-width: 768px) {
   .aboutsection {
     display: flex;
+    flex: 0 0 25%;
+    flex-direction: row;
   }
-  
+
   .aboutmelink {
     flex: 0 0 25%;
     text-align: end;
@@ -192,6 +219,7 @@ footer {
   .worksecimg img {
     /* Set width of first project*/
     width: 100%;
+  }
 
   .worksection {
     position: relative;
@@ -200,12 +228,13 @@ footer {
     text-align:center;
   }
   
+    
     .workseclink {
       flex: 0 0 25%;
-      text-align: center;
+      text-align: end;
       padding: 0 10px;
-      
     }
+  
     
     .projcontainer {
       position: relative;
@@ -214,10 +243,6 @@ footer {
       justify-content: center;
       max-width: 75%;
     }
-
-
-    
-  }
   
   .worksecimg:not(:first-child) {
     flex-basis: 50%; /* set two images per row with a gap of 2rem*/
@@ -227,13 +252,6 @@ footer {
     position: relative;
     display: flex;
     justify-content: space-between;
-  }
-
-  .workseclink {
-    flex: 0 0 25%;
-    text-align: end;
-    padding: 0 10px;
-    
   }
   
   .projcontainer {

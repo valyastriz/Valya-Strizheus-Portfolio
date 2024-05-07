@@ -23,6 +23,11 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
+  .navAndLogo {
+    border: 3px solid yellow;
+    margin: 1px;
+  }
+
   .navbar {
     border: 3px solid white;
     margin: 1px;
