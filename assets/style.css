@@ -1,6 +1,6 @@
 body {
   font-family: Verdana, Arial, sans-serif;
-  background-color: #ABAAB8;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
   position: relative;
@@ -89,7 +89,6 @@ header {
   -webkit-text-stroke: 1px black; /* For Safari */
   text-stroke: 1px black; /* For Firefox */
   position: relative;
-  
 }
 
 h2 {
@@ -105,13 +104,13 @@ p {
 }
 
 .aboutmelink {
-  padding: 0 0 0.75em;
+  padding: 0.55em 0.75em 0.75em;
 }
 
 .workseclink {
   flex: 0 0 25%;
   text-align: center;
-  padding: 0 0 0.75em;
+  padding: 0.55em 0.75em 0.75em;
 }
 
 /* .aboutmep {
@@ -153,9 +152,14 @@ footer {
 
 .aboutsection {
   display: flex;
-  padding: 1em 1em;
+  margin: 1em 1em;
+  padding: 0.1em;
   flex-direction: column;
   text-align: center;
+  background-color:#ede7ef;
+  box-shadow: 0px 0px 15px rgb(174, 138, 171);
+  border: 1px solid #e4ceec;
+  border-radius: 5px;
 }
 
 .text-box {
@@ -173,7 +177,12 @@ footer {
 }
 
 .worksection {
-  padding: 1em 1em 1em;
+  margin: 1em 1em;
+  padding: 0.1em;
+  background-color:#ede7ef;
+  box-shadow: 0px 0px 15px rgb(174, 138, 171);
+  border: 1px solid #e4ceec;
+  border-radius: 5px;
 }
 
 .worksection .text-box .projdate {
@@ -192,6 +201,9 @@ footer {
   flex: 1 1 auto;
 }
 
+.worksecimg img:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5)
+}
 
 /* Small Screen media query */
 @media screen and (max-width: 480) {
