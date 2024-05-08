@@ -146,39 +146,6 @@ p {
   color: #184a56;
 }
 
-/*
-.projects {
-
-}
-
-footer {
-
-}
-
-.contactinfoot {
-
-}
-
-.footphone {
-
-}
-
-.footemail {
-
-}
-
-.footgithub {
-
-} 
-
-.projname {
-} */
-
-
-/* .worksection h2 {
-
-} */
-
 .aboutsection {
   display: flex;
   margin: 1em 1em;
@@ -262,6 +229,27 @@ footer {
   color: #ecf5f8;
 }
 
+/* tiny screens */
+@media screen and (max-width: 350px) {
+  .headerimglogan {
+    font-size: 0.5rem;
+}
+
+  .slogan {
+    display: none;
+  }
+
+
+  .text-box {
+    font-size: .75rem;
+    
+  }
+  
+  .worksection .text-box .projdate {
+    font-size: .60rem;
+  }
+
+}
 
 /* Small Screen media query */
 @media screen and (max-width: 480px) {
@@ -295,24 +283,24 @@ footer {
   }
 
   .headerimglogan {
-    position: relative;
-  }
-
-  .slogan {
-    position: absolute;
     white-space: nowrap;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: .75rem;
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-  }
-
-  .slogan p {
-    
-  }
+    position: relative;
+    align-items: center;
+    font-size: .75rem;
 }
 
+.contactinfoot h3 {
+  font-size: .90rem;
+}
 
+.footnav li {
+  font-size: .9rem;
+}
+}
 
 /* Large Screens Media Query */
 
@@ -391,8 +379,4 @@ footer {
   
   
 }
-
-
-
-/* testing */
-
+}
