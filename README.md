@@ -22,3 +22,5 @@ To access the live version of the website, visit [Valya Strizheus Portfolio]([ht
 
 - HTML
 - CSS
+
+README Created in Collaboration with ChatGPT
