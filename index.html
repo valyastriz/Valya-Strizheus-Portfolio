@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="./assets/reset.css">
-  <!-- <link rel="stylesheet" href="./assets/tempborder.css"> -->
+  <link rel="stylesheet" href="./assets/tempborder.css">
   <link rel="stylesheet" href="./assets/style.css">
   <title>Valya Strizheus Porfolio</title>
 </head>
@@ -18,9 +18,9 @@
       <!-- Navigation Bar -->
       <nav class="navbar">
         <ul>
-          <li><a href="aboutme.html">About Me</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
+          <li><a href="#aboutmeseclink">About Me</a></li>
+          <li><a href="#worksectionlink">Work</a></li>
+          <li><a href="#contactlink">Contact Me</a></li>
           <li><a href="resume.html">Resume</a></li>
         </ul>
       </nav>
@@ -28,7 +28,7 @@
     
     <!-- Header Image and slogan-->
     <div class="headerimglogan">
-      <img class="headerimage" src="./assets/Background-Image.png" alt="Abstract purple background image">
+      <img class="headerimage" src="./assets/bird5.png" alt="Image of birds on telephone pole wires">
       <div class="slogan">
         <p><em>From Concept to Click: Follow My Journey</em></p>
       </div>
@@ -40,9 +40,12 @@
 
     <section class="aboutsection">
       <!-- About Me Section -->
-      <h2 class="aboutmelink">
-        <a href="aboutme.html" class="noullinknosh">About Me</a>
-      </h2>
+      <div class="aboutmelink">
+        <h2>
+          <a href="aboutme.html" class="noullinknosh" id="aboutmeseclink">About Me</a>
+        </h2>
+        <img src="./assets/portrait.png" alt="portrait photo of Valentina Strizheus" class="portrait">
+      </div>
       <div>
         <p class="aboutmep">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia quis vel eros donec ac odio. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Sit amet aliquam id diam maecenas ultricies. Quam vulputate dignissim suspendisse in est ante. Facilisis gravida neque convallis a cras semper auctor neque.
@@ -56,7 +59,7 @@
     <section class="worksection">
       <!-- Card Display of Work Section -->
           <h2 class="workseclink">
-            <a href="work.html" class="noullinknosh">Work</a>
+            <a href="work.html" class="noullinknosh" id="worksectionlink">Work</a>
           </h2> 
           <div class="projcontainer">
             <div class="worksecimg">
@@ -70,7 +73,7 @@
             </div>
             <div class="worksecimg">
               <a href="comingsoon.html">
-                <img src="./assets/project-image.png" alt="General Purple Stripes image as placeholder for projects coming soon" class="projects">
+                <img src="./assets/ocean.png" alt="General watercolor ocean image as placeholder for projects coming soon" class="projects">
                 <label class="text-box">
                   <p class="projname">Future Project</p>
                   <p class="projdate">TBD</p>
@@ -79,7 +82,7 @@
             </div>
             <div class="worksecimg">
               <a href="comingsoon.html">
-                <img src="./assets/project-image.png" alt="General Purple Stripes image as placeholder for projects coming soon" class="projects">
+                <img src="./assets/ocean.png" alt="General watercolor ocean image as placeholder for projects coming soon" class="projects">
                 <label class="text-box">
                   <p class="projname">Future Project</p>
                   <p class="projdate">TBD</p>
@@ -88,7 +91,7 @@
             </div>
             <div class="worksecimg">
               <a href="comingsoon.html">
-                <img src="./assets/project-image.png" alt="General Purple Stripes image as placeholder for projects coming soon" class="projects">
+                <img src="./assets/ocean.png" alt="General watercolor ocean image as placeholder for projects coming soon" class="projects">
                 <label class="text-box">
                   <p class="projname">Future Project</p>
                   <p class="projdate">TBD</p>
@@ -97,7 +100,7 @@
             </div>
             <div class="worksecimg">
               <a href="comingsoon.html">
-                <img src="./assets/project-image.png" alt="General Purple Stripes image as placeholder for projects coming soon" class="projects">
+                <img src="./assets/ocean.png" alt="General watercolor ocean image as placeholder for projects coming soon" class="projects">
                 <label class="text-box">
                   <p class="projname">Future Project</p>
                   <p class="projdate">TBD</p>
@@ -106,7 +109,7 @@
             </div>
             <div class="worksecimg">
               <a href="comingsoon.html">
-                <img src="./assets/project-image.png" alt="General Purple Stripes image as placeholder for projects coming soon" class="projects">
+                <img src="./assets/ocean.png" alt="General watercolor ocean image as placeholder for projects coming soon" class="projects">
                 <label class="text-box">
                   <p class="projname">Future Project</p>
                   <p class="projdate">TBD</p>
@@ -115,7 +118,7 @@
             </div>
             <div class="worksecimg">
               <a href="comingsoon.html">
-                <img src="./assets/project-image.png" alt="General Purple Stripes image as placeholder for projects coming soon" class="projects">
+                <img src="./assets/ocean.png" alt="General watercolor ocean image as placeholder for projects coming soon" class="projects">
                 <label class="text-box">
                   <p class="projname">Future Project</p>
                   <p class="projdate">TBD</p>
@@ -129,10 +132,10 @@
   </main>
 
   <footer>
-    <h3 class="contactinfoot">
-      <a href="./contact.html" class="noullinknosh">Contact Me</a>
-    </h3>
-    <nav>
+    <div class="contactinfoot">
+        <a href="./contact.html" class="noullinknosh"><h3 id="contactlink">Contact Me</h3></a>
+    </div>
+    <nav class="footnav">
       <ul>
         <li class="footphone">Phone: <a href="tel:+16145725210">614-572-5210</a></li>
         <li class="footemail">Email: <a href="mailto:valyastriz@gmail.com">valyastriz@gmail.com</a></li>
