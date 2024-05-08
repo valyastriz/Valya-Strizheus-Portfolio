@@ -15,8 +15,7 @@ This website serves as a showcase of Valya's skills, projects, and journey as a 
 
 ## Accessing the Site
 
-To access the live version of the website, visit [Valya Strizheus Portfolio](([https://valyastriz.github.io/Valya-Strizheus-Portfolio/
-)]).
+To access the live version of the website, visit [Valya Strizheus Portfolio](https://valyastriz.github.io/Valya-Strizheus-Portfolio/).
 
 ## Technologies Used
 
